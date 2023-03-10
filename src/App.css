@@ -59,13 +59,67 @@ a {
 }
 .Loding .loding span {
   display: inline-block; /* span은 원래 iline 요소 , 근데 inline-block으로 두면 줄이 바뀜*/
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
   background-color: gray;
+  border-radius: 50%;
+  animation: loding 1s 0s linear infinite;
 }
-.Loding .loding:nth-child(1) {
+.Loding .loding span:nth-child(1) {
+  animation-delay: 0s;
+  background-color: crimson;
 }
-.Loding .loding:nth-child(2) {
+.Loding .loding span:nth-child(2) {
+  animation-delay: 0.2s;
+  background-color: dodgerblue;
 }
-.Loding .loding:nth-child(3]) {
+.Loding .loding span:nth-child(3) {
+  animation-delay: 0.4s;
+  background-color: yellowgreen;
+}
+@keyframes loding {
+  /* 이름은 상관없음 className과 겹쳐도 상관없다. */
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.2;
+  }
+  100% {
+    opacity: 0;
+    scale: 0.5;
+  }
+}
+/* BeforeAfter */
+.BeforeAfter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.BeforeAfter .gnb a {
+}
+.BeforeAfter .gnb a:before {
+  content: "01";
+  background-color: royalblue;
+  color: #fff;
+  width: 20px;
+  height: 20px; /* 그냥 높이 넓이값을 주면 안바뀜 inline 속성이라 */
+  display: inline-block; /* inline-block 을 주면 줄바꿈은 안되대 변경 가능*/
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.BeforeAfter .gnb a:after {
+  content: "update";
+  background-color: crimson;
+  color: #fff;
+  margin-left: 2px;
+  padding: 2px;
+  border-radius: 5px;
 }

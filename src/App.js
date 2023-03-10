@@ -2,7 +2,8 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Dropdown from "./Dropdown";
-import Loding from "./loding";
+import Loding from "./Loding";
+import BeforeAfter from "./BeforeAfter";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/dropdown" element={<Dropdown />}></Route>
           <Route path="/loding" element={<Loding />}></Route>
+          <Route path="/beforeAfter" element={<BeforeAfter />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

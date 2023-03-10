@@ -8,6 +8,7 @@
 
 body {
   font-family: "NanumSquareNeo-Variable";
+  margin: 0;
 }
 a {
   color: #222;
@@ -122,4 +123,37 @@ a {
   margin-left: 2px;
   padding: 2px;
   border-radius: 5px;
+}
+/* Netflix */
+.Netflix {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+.faq {
+}
+.faq-inner {
+  width: 700px;
+  margin: auto;
+}
+.faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.accordion {
+  font-size: 16px;
+}
+.accordion .title,
+.accordion .content {
+  background-color: #303030;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+}
+.accordion .title {
+  cursor: pointer;
+}
+.accordion .content {
+  display: none;
 }

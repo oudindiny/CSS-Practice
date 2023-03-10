@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import Loding from "./Loding";
 import BeforeAfter from "./BeforeAfter";
+import NetFlix from "./Netflix";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/dropdown" element={<Dropdown />}></Route>
           <Route path="/loding" element={<Loding />}></Route>
           <Route path="/beforeAfter" element={<BeforeAfter />}></Route>
+          <Route path="/netflix" element={<NetFlix />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

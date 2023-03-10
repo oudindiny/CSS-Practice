@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "NanumSquareNeo-Variable";
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #222;
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Dropdown */
+.Dropdown {
+  display: inline-block; /* content 양 만큼 줄어든다. */
+  width: 200px;
+}
+.Dropdown .dropdown-btn {
+  width: inherit; /* 부모의 값을 상속 받아서 사용 */
+  padding: 10px; /* height로 주는 것보다 padding으로 주는 게 좋음  */
+  font-size: 15px;
+  background: yellowgreen;
   color: white;
+  border: none;
+  outline: none; /* 버튼을 누르게 되면 자동적으로 아웃라인이 생김 -> 그래서 없애주는 것 */
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.Dropdown .dropdown-submenu {
+  display: none;
+  width: inherit;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Dropdown .dropdown-submenu a {
+  display: block;
+  padding: 7px;
+  text-align: center;
+  cursor: pointer;
+  color: darkgray;
+}
+.Dropdown .dropdown-submenu a:hover {
+  background-color: #eee;
+}
+.Dropdown:hover .dropdown-submenu {
+  display: block;
 }

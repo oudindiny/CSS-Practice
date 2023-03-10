@@ -1,21 +1,14 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 function App() {
-  const navigate = useNavigate();
   return (
     <div className="App">
-      <button
-        onClick={() => {
-          navigate("/dropdown");
-        }}
-      >
-        dropdown
-      </button>
       <BrowserRouter>
         <Routes>
-          <Route path="/dropdown"></Route>
+          <Route path="/dropdown" element={<Dropdown />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

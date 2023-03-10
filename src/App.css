@@ -46,3 +46,26 @@ a {
 .Dropdown:hover .dropdown-submenu {
   display: block;
 }
+
+/* Loding */
+.Loding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} /* 정중앙에서 시작*/
+
+.Loding .loding {
+}
+.Loding .loding span {
+  display: inline-block; /* span은 원래 iline 요소 , 근데 inline-block으로 두면 줄이 바뀜*/
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+}
+.Loding .loding:nth-child(1) {
+}
+.Loding .loding:nth-child(2) {
+}
+.Loding .loding:nth-child(3]) {
+}

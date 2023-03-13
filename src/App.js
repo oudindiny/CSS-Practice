@@ -11,7 +11,7 @@ import ButtonTest from "./ButtonTest";
 function App() {
   return (
     <div className="App">
-      <ButtonTest />
+      <DropdownMenu />
       <BrowserRouter>
         <Routes>
           <Route path="/dropdown" element={<Dropdown />}></Route>

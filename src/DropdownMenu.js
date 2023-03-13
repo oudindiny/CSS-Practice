@@ -16,43 +16,45 @@ const DropdownMenu = () => {
         <DropdownButton onClick={myPageHandler} ref={myPageRef}>
           마이페이지
         </DropdownButton>
-        <Menu isDropped={myPageIsOpen}></Menu>
-        <UL>
-          <LI>
-            <LinkWrapper href="#1-1">메뉴1</LinkWrapper>
-          </LI>
-        </UL>
-        <UL>
-          <LI>
-            <LinkWrapper href="#1-2">메뉴2</LinkWrapper>
-          </LI>
-        </UL>
-        <UL>
-          <LI>
-            <LinkWrapper href="#1-3">메뉴3</LinkWrapper>
-          </LI>
-        </UL>
+        <Menu isDropped={myPageIsOpen}>
+          <UL>
+            <LI>
+              <LinkWrapper href="#1-1">메뉴1</LinkWrapper>
+            </LI>
+          </UL>
+          <UL>
+            <LI>
+              <LinkWrapper href="#1-2">메뉴2</LinkWrapper>
+            </LI>
+          </UL>
+          <UL>
+            <LI>
+              <LinkWrapper href="#1-3">메뉴3</LinkWrapper>
+            </LI>
+          </UL>
+        </Menu>
       </DropdownContainer>
       <DropdownContainer>
         <DropdownButton onClick={borderHandler} ref={borderRef}>
           게시판
         </DropdownButton>
-        <Menu isDropped={borderIsOpen}></Menu>
-        <UL>
-          <LI>
-            <LinkWrapper href="#2-1">메뉴1</LinkWrapper>
-          </LI>
-        </UL>
-        <UL>
-          <LI>
-            <LinkWrapper href="#2-2">메뉴2</LinkWrapper>
-          </LI>
-        </UL>
-        <UL>
-          <LI>
-            <LinkWrapper href="#2-3">메뉴3</LinkWrapper>
-          </LI>
-        </UL>
+        <Menu isDropped={borderIsOpen}>
+          <UL>
+            <LI>
+              <LinkWrapper href="#2-1">메뉴1</LinkWrapper>
+            </LI>
+          </UL>
+          <UL>
+            <LI>
+              <LinkWrapper href="#2-2">메뉴2</LinkWrapper>
+            </LI>
+          </UL>
+          <UL>
+            <LI>
+              <LinkWrapper href="#2-3">메뉴3</LinkWrapper>
+            </LI>
+          </UL>
+        </Menu>
       </DropdownContainer>
       <Logout onClick={logoutClickHandler}>로그아웃</Logout>
     </Wrapper>

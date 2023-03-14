@@ -13,6 +13,7 @@ const Button = styled.button`
       color: #d63031;
       background-color: #fff;
       cursor: pointer;
+
       &:after {
         content: "🍒";
       }

@@ -7,11 +7,12 @@ import BeforeAfter from "./BeforeAfter";
 import NetFlix from "./Netflix";
 import DropdownMenu from "./DropdownMenu";
 import ButtonTest from "./ButtonTest";
+import Modalframe from "./Modalframe";
 
 function App() {
   return (
     <div className="App">
-      <DropdownMenu />
+      <Modalframe />
       <BrowserRouter>
         <Routes>
           <Route path="/dropdown" element={<Dropdown />}></Route>
